@@ -1,0 +1,24 @@
+.text_bold {
+    font-weight: 600;
+}
+
+.text_light {
+    @include color(#9E9E9E);
+}
+
+.h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.h2 {
+    font-size: 28px;
+}
+
+.h3 {
+    font-size: 18px;
+}
+
+.h4 {
+    font-size: 16px;
+}

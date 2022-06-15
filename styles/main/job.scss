@@ -1,0 +1,26 @@
+.job {
+    display: flex;
+    align-items: center;
+}
+
+.job__logo {
+    max-width: 48px;
+    max-height: 48px;
+    margin-right: 16px;
+
+    &._round {
+        border-radius: 8px;
+    }
+}
+
+.job__info {}
+
+.job__date {
+    display: flex;
+    align-items: center;
+
+    svg {
+        margin-right: 4px;
+    }
+}
+

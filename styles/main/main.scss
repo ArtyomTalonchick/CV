@@ -1,0 +1,34 @@
+@import "./job.scss";
+@import "./card.scss";
+@import "./project.scss";
+
+.main {
+    display: flex;
+    gap: 24px;
+    padding-top: 24px;
+}
+
+.main__half {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.main__part {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.main__part-header {
+
+    &::after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #424242;
+        border-radius: 2px;
+    }
+}

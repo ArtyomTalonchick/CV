@@ -1,0 +1,12 @@
+.header__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+}
+
+.header__contact-link {
+    svg {
+        margin-right: 4px;
+        transform: matrix(1, 0, -0.2, 1, 0, 0);
+    }
+}
