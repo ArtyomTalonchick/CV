@@ -1,7 +1,3 @@
-@import "./job.scss";
-@import "./card.scss";
-@import "./project.scss";
-
 .main {
     display: flex;
     gap: 24px;
@@ -18,7 +14,7 @@
 .main__part {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 8px;
 }
 
 .main__part-header {

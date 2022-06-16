@@ -1,9 +1,9 @@
-.job {
+.company {
     display: flex;
     align-items: center;
 }
 
-.job__logo {
+.company__logo {
     max-width: 48px;
     max-height: 48px;
     margin-right: 16px;
@@ -13,9 +13,9 @@
     }
 }
 
-.job__info {}
+.company__info {}
 
-.job__date {
+.company__date {
     display: flex;
     align-items: center;
 
@@ -23,4 +23,3 @@
         margin-right: 4px;
     }
 }
-

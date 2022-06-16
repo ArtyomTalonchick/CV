@@ -22,6 +22,8 @@ body {
 svg {
     width: 16px;
     height: 16px;
+    min-width: 16px;
+    min-height: 16px;
 }
 
 a {
@@ -40,6 +42,10 @@ a {
     &:active {
         @include color(#9E9E9E);
     }
+
+    svg {
+        margin-right: 4px;
+    }
 }
 
 ul {
@@ -57,6 +63,9 @@ ul {
     padding: 48px 32px 24px;
 }
 
-@import "./header/header.scss";
-@import "./main/main.scss";
-@import "./comman/comman.scss";
+@import "./styles/comman.scss";
+@import "./styles/header.scss";
+@import "./styles/main.scss";
+@import "./styles/card.scss";
+@import "./styles/company.scss";
+@import "./styles/note.scss";

@@ -1,0 +1,11 @@
+.note {
+    display: flex;
+    
+    svg {
+        margin-right: 4px;
+    }
+    
+    &:not(:last-child) {
+        margin-bottom: 4px;
+    }
+}

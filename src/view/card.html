@@ -1,0 +1,21 @@
+@@if (context.job) {
+    @@include("./job.html", {
+        img: {
+            src: "@@job.img.src",
+            alt: "@@job.img.alt",
+        },
+        name: "@@job.name",
+        company: "@@job.company",
+        date: "@@job.date",
+    })
+}
+@@for (var i = 0; context.blocks && i < blocks.length; i++) {
+    <div class="card">
+        <div class="text_bold card__header">
+            `+blocks[i].header+`
+        </div>
+        <div>
+            @@loop("./note.html", `+JSON.stringify(blocks[i].notes)+`)
+        </div>
+    </div>
+}
