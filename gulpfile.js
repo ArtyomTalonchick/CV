@@ -1,6 +1,7 @@
 import gulp from "gulp";
 import gulpClean from "gulp-clean";
 import gulpFileinclude from "gulp-file-include";
+import gulpHtmlmin from "gulp-htmlmin";
 import gulpSass from "gulp-sass";
 import _sass from "sass";
 
@@ -23,6 +24,10 @@ const compileHtml = () =>
     .pipe(gulpFileinclude({
       prefix: "@@",
       basepath: "@file"
+    }))
+    .pipe(gulpHtmlmin({
+      collapseWhitespace: true,
+      removeComments: true,
     }))
     .pipe(gulp.dest(buildPath));
 gulp.task("compileHtml", compileHtml);
