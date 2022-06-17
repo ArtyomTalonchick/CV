@@ -22,3 +22,21 @@
 .h4 {
     font-size: 16px;
 }
+
+@media (max-width: $small) {
+    .h1 {
+        font-size: 24px;
+    }
+    
+    .h2 {
+        font-size: 18px;
+    }
+    
+    .h3 {
+        font-size: 16px;
+    }
+    
+    .h4 {
+        font-size: 14px;
+    }
+}

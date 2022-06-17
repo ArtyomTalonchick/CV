@@ -3,6 +3,9 @@
     src: local("Inter"), url("./assets/inter-regular.ttf") format("truetype");
 }
 
+$medium: 720px;
+$small: 480px;
+
 @mixin color ($color) {
     color: $color;
 
@@ -12,6 +15,8 @@
 }
 
 body {
+    min-width: 360px;
+
     font-family: Inter;
     font-size: 14px;
     @include color(#212121);
@@ -61,6 +66,14 @@ ul {
     min-height: 100vh;
     box-sizing: border-box;
     padding: 48px 32px 24px;
+
+    @media (max-width: $medium) {
+        padding: 32px 16px;
+    }
+
+    @media (max-width: $small) {
+        padding: 24px 16px;
+    }
 }
 
 @import "./styles/comman.scss";
