@@ -1,7 +1,41 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header__content {
+    font-size: 13px;
+}
+
+.header__location {
+    display: flex;
+    align-items: center;
+    margin: 4px 0 8px;
+    svg {
+        margin-right: 4px;
+    }
+}
+
+.header__photo {
+    max-width: 96px;
+    max-height: 96px;
+    border-radius: 48px;
+
+    @media (min-width: $medium) {
+        margin-left: 140px;
+    }
+}
+
 .header__contacts {
     display: flex;
     flex-wrap: wrap;
     gap: 8px 24px;
 }
 
-.header__contact-link {}
+.header__contact-link {
+    display: flex;
+    align-items: center;
+    svg {
+        margin-right: 4px;
+    }
+}

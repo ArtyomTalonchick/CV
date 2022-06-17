@@ -38,14 +38,14 @@ a {
     font-style: italic;
     transition: all 200ms;
 
-    @include color(#424242);
+    @include color(#01579B);
 
     &:hover {
-        @include color(#757575);
+        @include color(#0288D1);
     }
 
     &:active {
-        @include color(#9E9E9E);
+        @include color(#03A9F4);
     }
 
     svg {

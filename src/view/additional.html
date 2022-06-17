@@ -1,0 +1,35 @@
+<div class="main__part">
+    <div class="main__part-header h2">
+        Additional
+    </div>
+    @@include("./_card.html", {
+        job: {
+            name: "Academic achievements",
+            company: "Belarusian National Olympiad in Mathematics <br/><strong>2rd, 3rd degree awards</strong>",
+            date: "2014-2017",
+            location: "Belarus",
+        },
+    })
+    <div class="card__delimiter"></div>
+    @@include("./_card.html", {
+        blocks: [
+            {
+                header: "Languages",
+                notes: [
+                    {
+                        type: "language",
+                        text: "<strong>Russion</strong>&nbsp;Native or bilingual proficiency",
+                    },
+                    {
+                        type: "language",
+                        text: "<strong>Belarusian</strong>&nbsp;Native or bilingual proficiency",
+                    },
+                    {
+                        type: "language",
+                        text: "<strong>English</strong>&nbsp;Limited working proficiency",
+                    },
+                ],
+            },
+        ],
+    })
+</div>

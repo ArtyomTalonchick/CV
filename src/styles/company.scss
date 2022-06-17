@@ -13,13 +13,25 @@
     }
 }
 
-.company__info {}
+.company__content {
+    flex-grow: 1;
+}
 
-.company__date {
+.company__info {
     display: flex;
     align-items: center;
+}
+
+.company__info-item {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
 
     svg {
         margin-right: 4px;
+    }
+
+    &:first-child {
+        margin-right: 8px;
     }
 }

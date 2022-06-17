@@ -1,5 +1,5 @@
 @@if (context.job) {
-    @@include("./_job.html", {
+    @@include("./_company.html", {
         img: {
             src: "@@job.img.src",
             alt: "@@job.img.alt",
@@ -7,6 +7,7 @@
         name: "@@job.name",
         company: "@@job.company",
         date: "@@job.date",
+        location: "@@job.location",        
     })
 }
 @@for (var i = 0; context.blocks && i < blocks.length; i++) {
