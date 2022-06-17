@@ -1,5 +1,5 @@
 .main {
-    padding-top: 24px;
+    padding-top: 16px;
 }
 
 .main__half {
@@ -8,7 +8,7 @@
 
     display: inline-flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 8px;
 
     &:first-child {
         padding-right: 12px;
@@ -23,7 +23,7 @@
             padding: 0;
         }
         &:last-child {
-            padding: 24px 0 0;
+            padding: 8px 0 0;
         }
     }
 }
