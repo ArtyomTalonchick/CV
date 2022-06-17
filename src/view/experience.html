@@ -10,7 +10,7 @@
                 alt: "tms",
             },
             name: "Education Mentor",
-            company: "TeachMeSkills",
+            company: "TeachMeSkills (Part-time)",
             date: "Sep 2021 - Present",
             location: "Minsk, Belarus",
         },
@@ -35,11 +35,56 @@
     @@include("./_card.html", {
         job: {
             img: {
+                src: "./assets/freelance-logo.webp",
+                alt: "freelance",
+            },
+            name: "Frontend Developer",
+            company: "Freelance (Part-time)",
+            date: "Nov 2020 - Present",
+        },
+        blocks: [
+            {
+                header: "Landing pages",
+                notes: [
+                    {
+                        type: "technology",
+                        text: "JavaScript, React, Axios, SCSS, MaterialUI",
+                    },
+                ],
+            },
+            {
+                header: "Admin site",
+                notes: [
+                    {
+                        type: "technology",
+                        text: "JavaScript, React, Axios, Redux, SCSS, MaterialUI",
+                    },
+                ],
+            },
+            {
+                header: "Marketplace",
+                notes: [
+                    {
+                        type: "technology",
+                        text: "TypeScript, React, Axios, Redux, SCSS, MaterialUI",
+                    },
+                ],
+            },
+            {
+                header: "And other...",
+                notes: [],
+            },
+        ],
+    })
+    <div class="card__delimiter"></div>
+    @@include("./_card.html", {
+        job: {
+            img: {
                 src: "./assets/softfx-logo.png",
                 alt: "soft-fx",
             },
             name: "Frontend Developer",
-            company: "Soft-FX",
+            company: "Soft-FX (Full-time)",
             date: "May 2020 - Present",
             location: "Minsk, Belarus",
         },
@@ -77,7 +122,7 @@
                 alt: "itransition",
             },
             name: "Frontend Developer",
-            company: "Itransition Group",
+            company: "Itransition Group (Full-time)",
             date: "Jun 2019 - May 2020",
             location: "Minsk, Belarus",
         },
@@ -112,51 +157,6 @@
                         text: "supporting existing code, delivering updates",
                     },
                 ],
-            },
-        ],
-    })
-    <div class="card__delimiter"></div>
-    @@include("./_card.html", {
-        job: {
-            img: {
-                src: "./assets/freelance-logo.webp",
-                alt: "freelance",
-            },
-            name: "Frontend Developer",
-            company: "Freelance",
-            date: "Nov 2020 - Present",
-        },
-        blocks: [
-            {
-                header: "Landing pages",
-                notes: [
-                    {
-                        type: "technology",
-                        text: "JavaScript, React, Axios, SCSS, MaterialUI",
-                    },
-                ],
-            },
-            {
-                header: "Admin site",
-                notes: [
-                    {
-                        type: "technology",
-                        text: "JavaScript, React, Axios, Redux, SCSS, MaterialUI",
-                    },
-                ],
-            },
-            {
-                header: "Marketplace",
-                notes: [
-                    {
-                        type: "technology",
-                        text: "TypeScript, React, Axios, Redux, SCSS, MaterialUI",
-                    },
-                ],
-            },
-            {
-                header: "And other...",
-                notes: [],
             },
         ],
     })
