@@ -26,6 +26,10 @@
             padding: 8px 0 0;
         }
     }
+
+    @media print {
+        gap: 4px;        
+    }
 }
 
 .main__part {
