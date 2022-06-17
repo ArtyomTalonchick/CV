@@ -14,6 +14,11 @@ $small: 480px;
     }
 }
 
+@page {
+    size: auto;
+    margin: 0;
+}
+
 body {
     min-width: 360px;
 
@@ -69,11 +74,7 @@ ul {
 
     @media (max-width: $medium) {
         padding: 32px 16px;
-    }
-
-    @media (max-width: $small) {
-        padding: 24px 16px;
-    }
+    }    
 }
 
 @import "./styles/comman.scss";
