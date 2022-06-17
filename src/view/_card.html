@@ -1,5 +1,5 @@
 @@if (context.job) {
-    @@include("./job.html", {
+    @@include("./_job.html", {
         img: {
             src: "@@job.img.src",
             alt: "@@job.img.alt",
@@ -15,7 +15,7 @@
             `+blocks[i].header+`
         </div>
         <div>
-            @@loop("./note.html", `+JSON.stringify(blocks[i].notes)+`)
+            @@loop("./_note.html", `+JSON.stringify(blocks[i].notes)+`)
         </div>
     </div>
 }
