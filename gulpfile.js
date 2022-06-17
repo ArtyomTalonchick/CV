@@ -37,9 +37,14 @@ const copyAssets = () =>
     .pipe(gulp.dest(`${buildPath}/assets`))
 gulp.task("copyAssets", copyAssets);
 
+const copyPublic = () =>
+  gulp.src("./public/**/*")
+    .pipe(gulp.dest(buildPath))
+gulp.task("copyPublic", copyPublic);
+
 const build = gulp.series(
   cleanBuild,
-  gulp.parallel(copyAssets, compileScss, compileHtml)
+  gulp.parallel(copyPublic, copyAssets, compileScss, compileHtml)
 );
 gulp.task("build", build);
 
