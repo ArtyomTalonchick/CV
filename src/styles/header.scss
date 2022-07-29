@@ -38,4 +38,11 @@
     svg {
         margin-right: 4px;
     }
+
+    &._only-print {
+        display: none;
+        @media print {
+            display: initial;
+        }
+    }
 }
