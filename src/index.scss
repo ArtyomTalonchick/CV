@@ -74,7 +74,11 @@ ul {
 
     @media (max-width: $medium) {
         padding: 24px 16px;
-    }    
+    }
+
+    @media print {
+        padding: 16px;
+    }
 }
 
 @import "./styles/comman.scss";
