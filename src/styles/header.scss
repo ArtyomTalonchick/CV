@@ -17,13 +17,9 @@
 }
 
 .header__photo {
-    max-width: 96px;
-    max-height: 96px;
-    border-radius: 48px;
-
-    @media (min-width: $medium) {
-        margin-left: 140px;
-    }
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 50%;
 }
 
 .header__contacts {

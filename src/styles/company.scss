@@ -20,12 +20,18 @@
 .company__info {
     display: flex;
     align-items: center;
+
+    @media (max-width: $small) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .company__info-item {
     display: flex;
     align-items: center;
     font-size: 13px;
+    margin-top: 4px;
 
     svg {
         margin-right: 4px;
@@ -33,5 +39,11 @@
 
     &:first-child {
         margin-right: 8px;
+    }
+
+    @media (max-width: $small) {
+        &:first-child {
+            margin-right: 0;
+        }
     }
 }
